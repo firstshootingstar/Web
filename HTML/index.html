@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daily Memo</title>
     <style>
         body{
-            font: 100% Lucida Sans, Verdana;
+            /* font: 100% Lucida Sans, Verdana; */
             line-height: 26px;
         }
         .wrapper{
@@ -18,12 +18,6 @@
         #top, #sidebar, #botton, #logged_in_center, .menuitem{
             border-radius: 4px;
             margin: 4px;
-        }
-
-        #top{
-            background-color: blueviolet;
-            color: #ffffff;
-            padding: 15px;
         }
 
         #menubar {
@@ -60,41 +54,91 @@
         }
 
         #logged_in_center{
-            /* width:  */
             position: relatvie;
             text-align: center;
             background-color: cornsilk;
             border: 1px solid black;
         }
+        /* 상단 메뉴 바 */
+        nav {
+            font-size: 12pt;
+            font-family: 'PT Sans', Arial, Sans-serif;
+            position: relative;
+        }
+
+        nav ul{
+            padding: 0;
+            margin: 0 auto;
+            width: auto;
+            background-color: #333;
+            text-align: center;
+        }
+
+        nav a, header a{
+            line-height: 50px;
+            height: 50px;
+            color: #ffffff;
+            text-align: center;
+            padding: 14.5px 16px;
+            text-decoration: none;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        nav a:hover {
+            font-weight: normal;
+        }
+
+        nav a#pull{
+            display: none;
+        }
+
+        header {
+            margin: 0px;
+            height: 50px;
+            padding-left: 2rem;
+            padding-right: 1rem;
+            color: white;
+            background: #3F51B5;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img{
+            vertical-align: middle;
+        }
+        /*
+        html{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        */
+
+        /* 아이콘 설정 */
+        .material-icons.md-18 {font-size: 18px;}
+
     </style>
 </head>
-<body>
+<body style="margin:0;">
+    <header>
+        <h3>
+            <a href="http://shootingstar1.dothome.co.kr/"><img src="modakbul.png" height="36" width="36">모닥불</a>
+        </h3>
+        <nav>
+          <span>
+            <a href="http://www.shootingstar1.dothome.co.kr/account.html">
+                <mat-icon class="material-icons md-18">person</mat-icon>
+                - 계정
+            </a>
+          </span>
+          <span><a href="http://www.shootingstar1.dothome.co.kr/login.html">- 로그인</a></span>
+        </nav>
+    </header>
     <div class="container wrapper">
-        <div id="top">
-            <mat-toolbar>
-                <div>
-                    <button>
-                        <span>
-                            <img src="modakbul.png" alt="picture should come here">
-                            모닥불
-                        </span>
-                        <div></div>
-                        <div></div>
-                    </button>
-                    <span>
-                        <div style="float: right; margin-right: 10px;">
-                            <mat-icon>power_icon</mat-icon>
-                            로그인
-                        </div>
-                        <div style="float: right; margin-right: 10px;">
-                            <mat-icon>person_icon</mat-icon>
-                            계정
-                        </div>
-                    </span>
-                    </span>
-                </div>
-            </mat-toolbar>
-        </div>
         <div id="wrapper">
             <div id="menubar">
                 <h1 style="text-align: center;">메뉴</h1>
